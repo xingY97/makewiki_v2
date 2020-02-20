@@ -1,5 +1,4 @@
 """makewiki URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
@@ -28,6 +27,11 @@ urlpatterns = [
 
     # Wiki App
     path('', include('wiki.urls')),
-
+    
+    # Authentication
     path('accounts/', include('django.contrib.auth.urls')),
+    
+    # Signup
+    path('accounts/', include ('accounts.urls')),
+
 ]
