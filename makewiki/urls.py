@@ -31,7 +31,6 @@ urlpatterns = [
     # Authentication
     path('accounts/', include('django.contrib.auth.urls')),
     
-    # Signup
-    path('accounts/', include ('accounts.urls')),
+
 
 ]
